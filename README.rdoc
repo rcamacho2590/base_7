@@ -17,3 +17,9 @@ Things you may want to cover:
   in the console:
   cd project-folder
   rails s
+
+*Additional tests
+  after runnning the app, in the console:
+  curl  -H "Accept: application/json" -H "Content-type: application/json" http://127.0.0.1:3000/numbers/30/base_seven
+
+  the number 30 it's the number you want to be changed to base seven
