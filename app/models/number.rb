@@ -5,7 +5,7 @@ class Number
 
   def self.number_base7(num)
     letters = ""
-    numb7 = num.to_s(7)
+    numb7 = num.to_i.to_s(7)
     numb7.chars.map { |n| letters.concat TABLE[n.to_i] }
     letters
   end
