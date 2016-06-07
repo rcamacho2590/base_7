@@ -4,9 +4,7 @@ class NumbersController < ApplicationController
   def base_seven
     @number = Number.number_base7(params[:id])
     render :status => 200,
-     :json => { :success => true,
-          :number => @number
-        }
+     :json => { :success => true, :letters => @number }
   end
 
 end
